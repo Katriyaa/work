@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+    <script src="/static/js/vue.js"></script>
+    <!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+    <div class="navbar"><div class="nav"><img src="/static/images/logo.png" alt=""> 信息门户</div></div>
+    <div class="container clearfix" >
+        <div class="banner">
+            <img src="/static/images/banner.png" alt="">
+        </div>
+        <section class="left">
+            <!-- 左侧 -->
+            <div class="user-box">
+                <!-- 用户栏 -->
+                <div class="user">
+                    <div class="head"><img src="/static/images/kou.jpg" alt=""></div>
+                    <h1>kou</h1>
+                    <div class="status-box">
+                       
+                        空闲
+                       <i class ="el-icon-caret-bottom"></i>
+                       <select class="status" id="status">
+                        <option value="">空闲</option>
+                        <option value="">工作</option>
+                        <option value="">上课</option>
+                        </select>
+                </div>
+                    <h1 class="operation"><a href="#">个人信息</a> <span>|</span> <a href="#">退出登录</a></h1>
+                
+            </div>
+            <!-- 列表栏 -->
+                <div class="left-down">
+                    <div class="sign"><img src="/static/images/login_title.png" alt=""> <i class="el-icon-s-tools"></i></div>
+                    <div class="function">
+                        <a class="icon"><img src="" alt=""><h3>新生自助..</h3></a>
+                        <a class="icon"><img src="" alt=""><h3>网上缴费.</h3></a>
+                        <a class="icon"><img src="" alt=""><h3>财务平台</h3></a>
+                        <a class="icon"><img src="" alt=""><h3>本科生教务</h3></a>
+                        <a class="icon"><img src="" alt=""><h3>中南云盘</h3></a>
+                        <a class="icon"><img src="" alt=""><h3>学工平台</h3></a>
+                        <a class="icon"><img src="" alt=""><h3>门户网站群</h3></a>
+                    </div>
+                </div>
+                <!-- 额外信息 -->
+                <a class="csuinfo" href="#">
+                    <img src="/static/images/cus_information.png" alt="">
+                    <div class="more">more</div>
+                </a>
+                <a class="csuinfo" href="#">
+                    <img src="/static/images/inform_title.png" alt="">
+                    <div class="more">more</div>
+                </a>
+        </section>
+        <!-- 中部 -->
+        <div class="middle">
+            <div class="title">
+                <img src="/static/images/title.png" alt="">
+                <span>学校要闻</span>
+            </div>
+            <div class="news">
+                <div class="news-item">
+                    <h3>1月20日 15:34</h3>
+                    <a class="news-content">
+                        <img src="/static/images/news1.jpg" alt="">
+                        <h2>中南大学新增国家社科基金重大项目1项</h2>
+                        <span>本网讯 近日,邵留国教授申报的《地缘政治突发事件对我国战略性矿产资源产业链供应安全影响的机理和对策研究》获准立项。</span>
+                    </a>
+                </div>
+                <a class="news-item">
+                    <h3>1月20日 15:34</h3>
+                    <div class="news-content">
+                        <img src="/static/images/news1.jpg" alt="">
+                        <h2>中南大学新增国家社科基金重大项目1项</h2>
+                        <span>本网讯 近日,邵留国教授申报的《地缘政治突发事件对我国战略性矿产资源产业链供应安全影响的机理和对策研究》获准立项。</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="right">
+            <a class="csuinfo" href="#">
+                <img src="/static/images/my_schedule.png" alt="">
+                <div class="more">more</div>
+            </a>
+            <div class="schedule" id = "sc">
+                <div class="month">1月
+                    <i class="el-icon-arrow-left"></i>
+                    <i class="el-icon-arrow-right"></i>
+                </div>
+                <div class="date">
+                    <div class="items" v-for = "(item,index) in dates">
+                       [[item]]
+                    </div>
+                </div>
+            </div>
+           <div class="application">
+                <a class="csuinfo" href="#">
+                    <img src="/static/images/store_title.png" alt="">
+                    <div class="more">more</div>
+                </a>
+                <div class="function">
+                    <a class="icon"><img src="" alt=""><h3>新生自助..</h3></a>
+                    <a class="icon"><img src="" alt=""><h3>网上缴费.</h3></a>
+                    <a class="icon"><img src="" alt=""><h3>财务平台</h3></a>
+                    <a class="icon"><img src="" alt=""><h3>本科生教务</h3></a>
+                    <a class="icon"><img src="" alt=""><h3>中南云盘</h3></a>
+                    <a class="icon"><img src="" alt=""><h3>学工平台</h3></a>
+                    <a class="icon"><img src="" alt=""><h3>门户网站群</h3></a>
+                    <a class="icon"><img src="" alt=""><h3>门户网站群</h3></a>
+                    <a class="icon"><img src="" alt=""><h3>门户网站群</h3></a>
+                </div>
+
+                
+           </div>
+            <a class="csuinfo" href="#">
+                <img src="/static/images/money_title.png" alt="">
+            </a>
+        </div>
+       
+    </div>
+    <footer><p>中南大学版权所有  湘ICP备05005659  技术支持：0731-88877894  邮箱地址：app@csu.edu.cn</p></footer>
+
+</body>
+<script>
+    var app = new Vue({
+        el:"#sc",
+        delimiters:["[[","]]"],
+        data:{
+            dates:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+        }
+    })
+</script>
+</html>

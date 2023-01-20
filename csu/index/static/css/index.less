@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    /*添加后元素能够包裹住比自己大的浮动子元素*/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+body {
+
+    background: url("../images/bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.left {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    height: 113px;
+
+    img {
+        vertical-align: middle;
+
+    }
+
+    span {
+        margin-left: 7px;
+        font-size: 24px;
+        color: white;
+    }
+}
+
+div.right {
+    position: relative;
+    float: right;
+    width: 38%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .selecter {
+        position: absolute;
+        top: 52px;
+        left: 60%;
+
+
+
+        select {
+            outline: 1px solid #92adda;
+            border-radius: 3px;
+            padding: 3px 9px;
+        }
+    }
+
+    //登录部分 
+    .box {
+        font-size: 20px;
+        position: absolute;
+        right: 15%;
+        top: 15%;
+        width: 400px;
+        height: 410px;
+        margin: 0 auto;
+        background-color: #ffffff;
+
+
+        .up {
+            position: relative;
+            padding: 15px 30px;
+
+            .icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .logway {
+                list-style: none;
+
+                .active {
+
+                    border-color: #2b6cdb;
+
+                    a {
+                        color: #2b6cdb;
+                    }
+                }
+
+                li {
+                    width: 50%;
+
+                    a {
+                        text-decoration: none;
+                        color: #34363e;
+                    }
+
+
+                    text-align: center;
+                    float: left;
+                    border-bottom: 1px solid #bbb;
+                    font-size: 16px;
+                    padding: 10px 20px;
+                }
+            }
+
+            .inputbox {
+                margin-top: 10px;
+                font-size: 14px;
+
+                .in:nth-child(1) {
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+
+                .in {
+
+
+                    border: 1px solid #e8e8e8;
+                    width: 100%;
+                    height: 40px;
+
+                    img {
+                        vertical-align: middle;
+                    }
+
+                    input {
+                        width: 70%;
+                        height: 38px;
+                        outline: none;
+
+                    }
+                }
+
+                .keep {
+                    margin: 10px 0 10px 0;
+                    text-align: left;
+                    font-size: 12px;
+                }
+
+                #ck {
+                    vertical-align: middle;
+                    margin-bottom: 2px;
+                    width: 25px;
+                }
+
+                button {
+
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 20px;
+                    margin-top: 15px;
+                    width: 100%;
+                    height: 50px;
+                    background-color: #2368de;
+                    outline: none;
+                }
+
+            }
+
+            .function {
+                font-size: 14px;
+
+                a {
+                    color: #0c4af9;
+                }
+
+                .lf {
+                    margin-top: 15px;
+                    float: left;
+                    color: #8d8e96;
+                }
+
+                .rt {
+                    margin-top: 15px;
+                    float: right;
+                }
+            }
+        }
+
+        .down {
+            margin-top: 10px;
+
+            width: 100%;
+            bottom: 0;
+            font-size: 16px;
+            padding: 14px 16px;
+            height: 60px;
+            background-color: #f3f8fe;
+            border-radius: 3px;
+
+
+            a {
+                color: #4071fa;
+                vertical-align: middle;
+                display: inline-block;
+                margin-left: 15px;
+            }
+        }
+
+        .info {
+            margin-top: 30px;
+            font-size: 6px;
+            line-height: 20px;
+            color: white;
+        }
+
+    }
+}

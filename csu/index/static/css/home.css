@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  border-style: none;
+  border-width: 0;
+  text-decoration: none;
+}
+.csuinfo {
+  margin-top: 15px;
+  padding: 10px 5px 5px 10px;
+  display: block;
+  position: relative;
+  background-color: #fff;
+}
+.csuinfo:hover .more {
+  color: white;
+  background-color: #0082fe;
+}
+.csuinfo .more {
+  width: 45px;
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  top: 5px;
+  right: 8px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 8px;
+  color: #e5e5e5;
+}
+.clearfix::after {
+  /*添加后元素能够包裹住比自己大的浮动子元素*/
+  content: "";
+  clear: both;
+  display: table;
+}
+h3 {
+  font-size: 12px;
+  font-weight: normal;
+}
+body {
+  position: relative;
+  background-color: #d4d5e0;
+  height: 1100px;
+}
+.navbar {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: #0082fe;
+  width: 100%;
+}
+.navbar .nav {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 24px;
+  color: white;
+}
+.navbar .nav img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 45px;
+  margin-right: 15px;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+}
+.container .banner {
+  position: relative;
+  z-index: -1;
+  margin-top: 70px;
+  width: 100%;
+  height: 140px;
+}
+.container .banner img {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.container section.left {
+  float: left;
+  width: 22%;
+  height: 800px;
+}
+.container section.left .user-box {
+  width: 100%;
+  height: 220px;
+  margin-top: -100px;
+}
+.container section.left .user-box .user {
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.container section.left .user-box .user h1 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.container section.left .user-box .user .head {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.container section.left .user-box .user .head img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container section.left .user-box .user .status-box {
+  display: block;
+  position: relative;
+  margin: 10px auto;
+  padding-top: 5px;
+  padding-right: 6px;
+  width: 120px;
+  height: 30px;
+  background-color: #00be04;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+.container section.left .user-box .user .status-box label {
+  overflow: hidden;
+}
+.container section.left .user-box .user .status-box i {
+  position: absolute;
+  right: 6px;
+  top: 7px;
+}
+.container section.left .user-box .user .status-box .status {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+}
+.container section.left .user-box .user .operation {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.container section.left .user-box .user h1 a {
+  font-size: 13px;
+  color: #3e3e3e;
+}
+.container section.left .user-box .user h1 a:hover {
+  color: #0082fe;
+}
+.container section.left .left-down {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+.container section.left .left-down .sign {
+  padding: 5px 10px 5px 6px;
+  position: relative;
+}
+.container section.left .left-down .sign i {
+  position: absolute;
+  right: 30px;
+  top: 16px;
+  font-size: 20px;
+}
+.container section.left .left-down .function {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+}
+.container section.left .left-down .function .icon {
+  width: 75px;
+  height: 70px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  text-align: center;
+  color: #74749c;
+}
+.container section.left .left-down .function .icon:hover {
+  background-color: #f2f4f8;
+}
+.container section.left .left-down .function img {
+  width: 44px;
+  height: 44px;
+}
+.container section.left .csuinfo {
+  margin-top: 15px;
+  padding: 10px 5px 5px 10px;
+  display: block;
+  position: relative;
+  background-color: #fff;
+}
+.container section.left .csuinfo:hover .more {
+  color: white;
+  background-color: #0082fe;
+}
+.container section.left .csuinfo .more {
+  width: 45px;
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  top: 5px;
+  right: 8px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 8px;
+  color: #e5e5e5;
+}
+.container .middle {
+  float: left;
+  margin: 15px 15px 0 15px;
+  width: 52%;
+  height: 400px;
+  padding: 20px 30px 0 20px;
+  background-color: #fff;
+}
+.container .middle .title img {
+  width: 40px;
+  vertical-align: middle;
+}
+.container .middle .title span {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 3px 5px;
+}
+.container .middle .news {
+  margin: 0 0 0 40px;
+}
+.container .middle .news br {
+  display: inline;
+  line-height: 11px;
+}
+.container .middle .news .news-item {
+  margin: 10px auto;
+  padding: 6px;
+  padding-bottom: 15px;
+}
+.container .middle .news .news-item:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+.container .middle .news .news-item h3 {
+  text-indent: 2px;
+  color: #a3a1b9;
+}
+.container .middle .news .news-item .news-content {
+  display: block;
+  margin-top: 10px;
+  border: 1px solid #dedede;
+  padding: 20px 20px 20px 20px;
+  background-color: #f7f7f7;
+}
+.container .middle .news .news-item .news-content h2 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #525151;
+}
+.container .middle .news .news-item .news-content span {
+  font-size: 8px;
+  color: #777777;
+}
+.container .middle .news .news-item .news-content img {
+  float: left;
+  margin-right: 6px;
+  width: 60px;
+  height: 60px;
+}
+.container .right {
+  width: 23%;
+  margin-top: 15px;
+  float: right;
+  padding: 5px;
+}
+.container .right .csuinfo {
+  margin-top: 0;
+}
+.container .right .schedule {
+  background-color: #fff;
+}
+.container .right .schedule .month {
+  position: relative;
+  text-align: center;
+  color: #8b8b8b;
+  font-weight: 700;
+  padding: 15px;
+  border-bottom: 1px solid #ccc8c8;
+}
+.container .right .schedule .month .el-icon-arrow-left {
+  font-size: 20px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+}
+.container .right .schedule .month .el-icon-arrow-right {
+  font-size: 20px;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+}
+.container .right .schedule .date {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 18px 0 0 18px;
+}
+.container .right .schedule .date .items {
+  width: 12%;
+  height: 30px;
+  margin-left: 5px;
+}
+.container .right .schedule .date .items:nth-child(7n) {
+  color: skyblue;
+}
+.container .right .schedule .date .items:nth-child(7n-6) {
+  color: skyblue;
+}
+.container .right .application {
+  background-color: #fff;
+  margin-top: 15px;
+}
+.container .right .application .sign {
+  padding: 5px 10px 5px 6px;
+  position: relative;
+}
+.container .right .application .sign i {
+  position: absolute;
+  right: 30px;
+  top: 16px;
+  font-size: 20px;
+}
+.container .right .application .function {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.container .right .application .function .icon {
+  width: 33%;
+  height: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #74749c;
+}
+.container .right .application .function .icon:hover {
+  background-color: #f2f4f8;
+}
+.container .right .application .function img {
+  width: 44px;
+  height: 44px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #0082fe;
+  width: 100%;
+  height: 40px;
+}
+footer p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+}
