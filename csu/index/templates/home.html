@@ -27,12 +27,12 @@
                     <h1>kou</h1>
                     <div class="status-box">
                        
-                        空闲
+                        [[status]]
                        <i class ="el-icon-caret-bottom"></i>
-                       <select class="status" id="status">
-                        <option value="">空闲</option>
-                        <option value="">工作</option>
-                        <option value="">上课</option>
+                       <select class="status" id="status" v-model = "status">
+                        <option value="空闲">空闲</option>
+                        <option value="工作">工作</option>
+                        <option value="上课">上课</option>
                         </select>
                 </div>
                     <h1 class="operation"><a href="#">个人信息</a> <span>|</span> <a href="#">退出登录</a></h1>
@@ -99,8 +99,8 @@
                 </div>
                 <div class="date">
                     <div class="items" v-for = "(item,index) in dates">
-                       [[item]]
-                    </div>
+                        [[item]]
+                     </div>
                 </div>
             </div>
            <div class="application">
@@ -133,10 +133,11 @@
 </body>
 <script>
     var app = new Vue({
-        el:"#sc",
+        el:".container",
         delimiters:["[[","]]"],
         data:{
-            dates:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+            dates:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
+            status:"空闲"
         }
     })
 </script>
